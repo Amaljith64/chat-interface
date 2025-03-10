@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     
     
     # CORS
-    BACKEND_CORS_ORIGINS: list = ["http://localhost:3000","https://chat-interface-roan.vercel.app"]  
+    BACKEND_CORS_ORIGINS: list = os.getenv("BACKEND_CORS_ORIGINS","http://localhost:3000,https://chat-interface-roan.vercel.app").split(",")
     
     class Config:
         env_file = ".env"
