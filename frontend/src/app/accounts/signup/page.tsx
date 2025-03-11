@@ -74,6 +74,7 @@ export default function SignUp() {
                             <input
                                 id="email"
                                 type="email"
+                                name="email" 
                                 required
                                 className="w-full rounded-md border border-gray-300 p-2"
                                 placeholder="Email address"

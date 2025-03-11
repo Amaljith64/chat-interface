@@ -125,7 +125,7 @@ const InsightsPanel = ({ open, handleOpen }: insightsProps) => {
         ...prev,
         {
           role: "system",
-          content: "Sorry, there was an error processing your request.",
+          content: "Sorry, there was an error processing your request. please check if you are logged in",
         },
       ]);
     } finally {
